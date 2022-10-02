@@ -1,25 +1,38 @@
-$(document).ready(function() {
+$('#description_cours').hide();
+$('#description_centreInteret').hide();
+$('#description_langue').hide();
+$('#description_competence').hide();
+$('#description_experience').hide();
+$('#description_formation').hide();
+$('#description_profil').hide();
+$('#header_content_section').hide();
 
 
-    let btnUp = document.getElementById('angle_up')
-    let btnDown = document.getElementById('angle_down')
-        //btnDown.hide()
+let btnDown = document.getElementById('headerInfoPersonnel');
 
-    btnUp.addEventListener('click', function(e) {
+btnDown.addEventListener('click', (e) => {
 
-        console.log('javascript fonctionne')
-            //contentHeader.hide()
-    });
-
-
-    $('body').on('click', '#angle_up', (e) => {
-        let contentHeader = document.getElementById('header_content_section');
-        $('header').css('display', 'none');
-        console.log(contentHeader);
-        contentHeader.toggle()
-    });
-
-
-
-
+    $('#header_content_section').slideToggle();
 });
+
+document.getElementById('headerProfil').onclick = (e) => {
+    $('#description_profil').slideToggle();
+}
+document.getElementById('headerFormation').onclick = (e) => {
+    $('#description_formation').slideToggle();
+}
+document.getElementById('headerExperience').onclick = (e) => {
+    $('#description_experience').slideToggle()
+}
+document.getElementById('headerCompetence').onclick = (e) => {
+    $('#description_competence').slideToggle()
+}
+document.getElementById('headerLangue').onclick = (e) => {
+    $('#description_langue').slideToggle()
+}
+document.getElementById('headerCentreInteret').onclick = (e) => {
+    $('#description_centreInteret').slideToggle()
+}
+document.getElementById('headerCours').onclick = (e) => {
+    $('#description_cours').slideToggle()
+}
