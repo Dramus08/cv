@@ -1,0 +1,26 @@
+.infoPerso {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 12px;
+}
+
+.header-items-right {
+    font-size: 18px;
+}
+
+.header-items-left {
+    font-family: cursive;
+    margin-right: 175px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fa-th-list {
+    margin-left: 100px;
+    display: none;
+}
+
+.fa-angle-up {
+    padding: 5px 5px;
+}
